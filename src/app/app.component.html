@@ -1,0 +1,74 @@
+<!--Notre template pour centraliser les infos communes aux autres composants
+Ici on va centraliser la barre de navigation qu'on souhaite visualiser dans liste-pokemon et detail-pokemon
+-->
+
+<!-- Barre de navigation -->
+<nav>
+  <div class="nav-wrapper teal">
+    <a href='#' class="brand-logo center">pokemon-app</a>
+  </div>
+</nav>
+
+  
+
+<router-outlet></router-outlet>
+
+
+<!--
+<h1 class='center'>{{ title }}</h1>
+
+<div class='container'>
+  <div class="row">
+    <div *ngFor='let pokemon of pokemons' class="col s6 m4">
+      <div class="card horizontal" (click)="selectPokemon(pokemon)" pkmnBorderCard="blue">
+        <div class="card-image">
+          <img [src]="pokemon.picture">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ pokemon.name }}</p>
+            <p><small>{{ pokemon.created | date:"dd/MM/yyyy" }}</small></p>
+            <span *ngFor='let type of pokemon.types' class='{{ type | pokemonTypeColor }}'>{{ type }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- 
+
+  <ul>
+  <li *ngFor="let pokemon of pokemons">{{ pokemon.name }}</li> -- pour chaque élt de la liste pokemons, nous allons la stocker dans une var pokemon. grace à l'interpolation, on peut directemt appeler la propr name --
+</ul>
+
+<p *ngIf="age > 18">Ceci est un message destiné aux personnes majeures.</p>
+-->
+
+
+  <!--
+  <div>
+    <input #box (keyup.enter)="values=box.value" (blur)="values=box.value" > -- C'est uniquement qd user va cliquer sur "entrée" que la valeur de values sera prise en compte. blur capture la perte du focus --
+    <p> {{ values }}</p>
+  </div>
+  -->
+
+  <!--
+  <div>
+      <input (keyup)="onKey($event)">
+      <p> {{ value }}</p>
+
+  </div>
+  -->
+
+  <!--
+  <div>
+      <button (click)="onClick()">CLiquer ici !</button>
+    <input #box (keyup)="onKey(box.value)">
+    <p> {{ box.value }}</p> -- affiche uniquement la valeur rentrée par l'utilisateur . Fait référence à la variable locale du template --
+    <p> {{ value }}</p> -- affiche la propriété value qui est bien modifiée dans notre composant via la méthode onkey() --
+  </div>
+  -->
+
+
